@@ -1,0 +1,2229 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans";
+    margin: 0
+}
+.clear::before, .clear::after {
+    content: "";
+    display: table;
+}
+.clear::after {
+    clear: both;
+}
+.header {
+    height: 64px;
+    background: #1a5880;
+    color: white;
+}
+.header-container {
+    width: 320px;
+    margin: auto;
+}
+.header-container_icon {
+    margin-left: 5px;
+}
+.header__mobile-dropdown_language-active {
+    width: 45px;
+    z-index: 2;
+    position: absolute;
+    left: 79px;
+    top: 8px;
+    border: none;
+    background: transparent;
+    color: transparent;
+}
+.header__mobile-dropdown_currency {
+    width: 100vh;
+    z-index: 2;
+    position: absolute;
+    left: 139px;
+    top: 9px;
+    display: block;
+    padding-left: 5px;
+}
+.one {
+  display: none;
+}
+.header__mobile-dropdown {
+    background: #133f5c;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    height: 300px;
+    z-index: 2;
+}
+.header__mobile-dropdown .bars {
+    display: none;
+}
+.header__mobile-dropdown button {
+    display: inline-block;
+    float: right;
+    margin:10 12px;
+    color: #bacdd9;
+    background: none;
+    border: none;
+}
+.header__mobile-dropdown-buttons {
+    height: 40px;
+    border-bottom: 1px solid #2b536d;
+}
+.header__mobile-dropdown-buttons .fa-angle-down {
+    padding-left: 5px;
+}
+.header__mobile-dropdown .header__love_mobile {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    color: #bacdd9;
+}
+.container {
+    /*background:#1a5880;*/
+    /*width:1365px;*/
+}
+.sub-container {
+    min-width: 300px;
+    max-width: 1024px;
+    /*padding: 0 5px 0 5px;*/
+}
+.sub-container .all-review, .all-review-box {
+    text-align: center;
+}
+.bars {
+    border-radius: 6%;
+    border: 1px solid #5f8aa6;
+    color: white;
+    background: transparent;
+    margin-left: 76px;
+    height: 36px;
+    width: 36px;
+    font-size: 15px;
+}
+.visible {
+    display: none;
+}
+.icon {
+    float: left;
+    margin-left: 15px;
+    margin-top: 4px;
+}
+.slider-main-image,
+.drive {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+.drive {
+    background: url("_temp/drive.jpg") no-repeat;
+    position: relative;
+    text-align: center;
+    margin-top: 47px;
+    height: 499px;
+}
+.smartphone-app {
+    /*padding-top:32px;*/
+}
+.book-rentals {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 46px;
+}
+.book-rentals-discription {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    color: white;
+    text-align: center;
+}
+.modificator {
+    padding-top: 20px;
+}
+.slider-container {
+    position: relative;
+    background: url("_temp/milano.jpg") no-repeat;
+    /*width:1365px;*/
+    /*height:485px;*/
+}
+.slider-container-discription {
+    color: white;
+    padding-top: 21px;
+    font-size: 14px;
+}
+.prices-box {
+    height: 160px;
+    position: relative;
+    background: #ffcd4a;
+    margin: auto;
+    width: 960px;
+    /*margin-right:16px;*/
+}
+.kaha-container {
+    width: 320px;
+    position: absolute;
+    top: 0;
+}
+.hot-deals {
+    background: #efe3c5;
+    text-align: center;
+}
+.hot-deals-heading {
+    color: #8d6a16;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 38px 0 27px 0;
+}
+.flex-item {
+    /*background-color: cornflowerblue;*/
+    /*width: 206px;*/
+    /*     height: 100px; */
+    margin: 10px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    min-width: 40px;
+    text-align: center;
+}
+.price {
+    height: 145px;
+    /*background: red;*/
+    width: 100%;
+    bottom: 0;
+}
+.present-price {
+    height: 40px;
+    width: 60px;
+    margin: auto;
+    text-align: center;
+    /*background: blue;*/
+    /*margin-top: 20px;*/
+    color: #444444;
+    font-weight: bold;
+}
+.last-price {
+    font-size: 12px;
+    text-align: center;
+    color: lightgray;
+    text-decoration: line-through;
+}
+.discount {
+    color: #e32327;
+}
+.car-booking {
+    height: 40px;
+    width: 150px;
+    margin-top: 8px;
+    border-radius: 4%;
+    border: none;
+    background: #0073b5;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.car-booking:hover {
+    background: #00a0fb;
+    cursor: pointer;
+}
+.booking-place {
+    margin-top: 20px;
+    text-align: center;
+    /*background: green;*/
+    font-size: 14px;
+}
+.top-location {
+    background: #efe3c5;
+    text-align: center;
+    margin: 20px 0 35px 0;
+}
+.black {
+    color: black;
+}
+.airports {
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    overflow: hidden;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+.location li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    color: #8d6a16;
+    overflow: hidden;
+}
+.location li:hover {
+    color: #cb9513;
+    cursor: pointer;
+}
+.location {
+    padding-bottom: 35px;
+}
+.logo {
+    width: 108px;
+    height: 46px;
+    background: #d4002a;
+    /*margin-left: 34%;*/
+    /*margin-top: 34px;*/
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 15px;
+    margin: auto;
+}
+.flag {
+    width: 32px;
+    height: 20px;
+    background: green;
+    position: absolute;
+    bottom: -10px;
+    right: -5px;
+    border: 1px solid #ffffff;
+    background: url(img/flag_italy.png) no-repeat;
+}
+.Avis-customer {
+    padding-top: 15px;
+}
+.customer-service {
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+}
+.border {
+    border-bottom: 4px solid #eeeeee;
+    padding-bottom: 36px;
+}
+.estimation {
+    border-collapse: collapse;
+    /*table-layout: fixed;*/
+    /*border-bottom: 1px solid #c7c4bd;*/
+    font-size: 13px;
+    margin: auto;
+}
+table th {
+    /*border-bottom: 1px solid #c7c4bd;*/
+}
+th {
+    font-weight: normal;
+}
+.estimation-comment {
+    text-align: left;
+    padding: 20px 20px 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+.estimation-number {
+    color: #3e88be;
+    padding-top: 17px;
+    vertical-align: top;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+.block {
+    padding: 10px 20px 10px 20px;
+    background: #f3f3f3;
+    width: 300px;
+}
+.border-none {
+    border: none;
+}
+.estimation-word {
+    float: right;
+    font-size: 20px;
+    color: #1a5880;
+    margin-right: 10px;
+}
+.name {
+    font-weight: bold;
+    font-size: 15px;
+}
+.date {
+    color: #777;
+    float: right;
+    margin-right: -100px;
+    font-size: 13px;
+    padding-top: 3px;
+}
+.country {
+    font-size: 13px;
+    color: #777;
+}
+.person {
+    padding-top: 30px;
+    border-bottom: 1px dashed #cccccc;
+    padding-bottom: 12px;
+    margin: 0 10px 0 10px;
+}
+.plus, .minus {
+    display: inline-block;
+    width: 320px;
+    padding: 15px 10px 0 10px;
+}
+.plus {
+    float: left;
+}
+.minus {
+    float: right;
+    margin-bottom: 30px;
+}
+.plus__description,
+.minus__description {
+    padding-left: 25px;
+    margin-top: -20px;
+    font-size: 13px;
+}
+.comment {
+    padding-top: 13px;
+}
+.all-review,
+.all-cities {
+    border: none;
+    background: none;
+    color: #0073b5;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+.dash {
+    display: none;
+}
+.all-review {
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+.all-cities {
+    color: #777777;
+    margin-top: 20px;
+}
+.container__all-cities {
+    background: #f6f6f6;
+    text-align: center;
+}
+.fa-angle-double-right {
+    padding-right: 5px;
+}
+.Avis {
+    padding: 35px 0 20px 0;
+    font-size: 20px;
+    border-bottom: 4px solid #ddd;
+    text-align: center;
+    font-weight: bold;
+    -webkit-margin-after: 0;
+    color: black;
+    min-width: 320px;
+}
+.car-rent {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    padding-top: 70px;
+}
+.car-rentals {
+    padding: 10px 0 10px 0;
+    color: #444444;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    overflow: hidden;
+    padding-left: 80px;
+}
+.avis-in-other-cities {
+    padding: 0;
+    margin: 0;
+    background: #f6f6f6;
+    max-width: 1024px;
+    max-height: 486px;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.center {
+    text-align: center;
+}
+.flex-logo {
+    text-align: center;
+    padding: 20px 0 30px 0;
+}
+.other-car-rental {
+    background: #d8e9f2;
+}
+.height-280 {
+    height: 280px;
+}
+.other {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 33px;
+    color: #1a5880;
+    font-weight: bold;
+    font-size: 17px;
+}
+.EconomyBookings-heading {
+    list-style-image: url("img/mark.png");
+    max-width: 320px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+.EconomyBookings {
+    text-align: left;
+    padding: 14px 0 14px 0;
+}
+.norton {
+    padding-bottom: 35px;
+}
+.car-renting {
+    color: #777777;
+    padding-top: 33px;
+    font-size: 21px;
+    border-bottom: 4px solid #eee;
+    margin:0px 5px;
+    padding-bottom: 20px;
+    text-align: center;
+    -webkit-margin-after: 0;
+}
+.why-book {
+    padding-top: 1em;
+    font-size: 19px;
+    text-align: center;
+    max-width: 320px;
+}
+.stars {
+    float: right;
+    color: #ffcd4a;
+}
+.joanna {
+    margin: 0 10px 25px 8px;
+    padding: 20px 17px 40px 17px;
+    border: 1px dashed #bccad7;
+    max-width: 320px;
+}
+.RC {
+    float: right;
+}
+.Joannas-comment {
+    font-size: 14px;
+    padding-top: 15px;
+}
+.ask-button,
+.subscribe-button {
+    background: #0073b5;
+    width: 281px;
+    height: 43px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 18px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.ask-question {
+    padding-top: 27px;
+    text-align: center;
+    padding-bottom: 20px;
+    max-width: 320px;
+}
+.FAQ-answer {
+    font-size: 14px;
+    color: #444444;
+    margin-top: 20px;
+}
+p {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+.booking-number {
+    background: #dddddd;
+    text-align: center;
+    max-width: 330px;
+    height: 266px;
+}
+.book-car-phone {
+    font-size: 13px;
+    color: #444444;
+    font-weight: bold;
+    padding-top: 27px;
+    padding-bottom: 19px;
+}
+.FAQ {
+    font-size: 14px;
+}
+.why-book__fullscreen {
+    display:none;
+}
+.phone {
+    font-weight: bold;
+    color: #0073b5;
+    font-size: 20px;
+    border-bottom: 1px dashed #b1b1b1;
+    padding-bottom: 21px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.book-rentals-discription {
+    font-size: 12px;
+}
+ul .flex-container {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+    margin: auto;
+}
+ul.flex-box {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    width: 315px;
+    margin: auto;
+    /*min-height: 266px;*/
+}
+.flex-item-estimation {
+    margin: auto;
+}
+.color {
+    background: #dddddd;
+    width: 180px;
+    margin: auto;
+}
+.social-networks {
+    color: #878787;
+    font-size: 14px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.email-field {
+    width: 281px;
+    height: 43px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 3px
+}
+.stay_tuned,
+.stay_tuned input{
+    text-align: center;
+    color: #ddd;
+}
+.stay_tuned {
+    max-width: 320px;
+}
+.stay-tuned {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 27px;
+    padding-bottom: 18px;
+    font-size: 18px;
+    color: #444444;
+}
+.subscribe {
+    padding-bottom: 18px;
+    text-align: center;
+    color: #444444;
+}
+.best_deals {
+    background: #555555;
+}
+.best-deals {
+    /*background: #444444;*/
+    padding-top: 40px;
+    padding-bottom: 16px;
+    font-weight: bold;
+    font-size: 19px;
+    color: #cccccc;
+    text-align: left;
+    padding-left: 20px;
+}
+.exclusive-offers {
+    color: #aaaaaa;
+    padding-bottom: 18px;
+    text-align: left;
+    padding-left: 20px;
+}
+.orange {
+    background: #f26522;
+}
+.darkgrey {
+    background: #444444;
+    text-align: center;
+}
+.sort {
+    width: 94%;
+    height: 33px;
+}
+.fa-sort {
+    margin-top: 10px;
+}
+.fa-fa-sort {
+    height: 33px;
+    border-left: 1px solid #c8c8c8;
+    margin-left: 285px;
+    margin-top: -23px;
+}
+.sort {
+    width: 94%;
+    height: 33px;
+    padding: 0 0 0 0;
+    border: none;
+    border-radius: 4%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.jump {
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+.footer {
+    background: url("img/texture.png");
+}
+svg {
+    width: 92px;
+    display: block;
+    margin: auto;
+}
+svg text {
+    text-anchor: middle;
+    font-size: 70px;
+    font-family: sans-serif;
+    fill: #0073b5;
+}
+.Svg {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.facebook-svg, .google-svg, .youtube-svg {
+    width: 36px;
+}
+.reviews {
+    font-size: 12px;
+    color: #0073b5;
+    text-align: center;
+}
+.wrap {
+    height: 305px;
+}
+.subscribe {
+    width: 100%;
+    /*height: 100%;*/
+}
+.flag {
+    width: 32px;
+    height: 20px;
+    background: green;
+    position: absolute;
+    bottom: -10px;
+    right: -5px;
+    border: 1px solid #ffffff;
+    background: url(img/flag_italy.png) no-repeat;
+    z-index: 100;
+}
+.input-location {
+    width: 100%;
+    height: 92%;
+    margin-top: 2px;
+    border: none;
+    text-align: left;
+    padding-left: 5px;
+    font-size: 16px;
+    color: black
+}
+.show {
+    height: 100%;
+    margin-top: -12px;
+    width: 100%;
+    color: white;
+    background: #0073b5;
+    border: none;
+}
+.select {
+    height: 35px;
+    width: 280px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    padding-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.price-container {
+    top: 10px;
+    /*bottom: 20px;*/
+    left: 10px;
+    right: 10px;
+    position: absolute;
+    background: white;
+}
+.padding {
+    padding: 10px 0 10px 0;
+}
+.smartphone {
+    display: none;
+}
+.modificator-right {
+    text-align: right;
+    margin-right: 20px;
+}
+.estimation-stars {
+    color: #ffcd4a;
+    padding-top: 15px;
+    font-size: 12px;
+}
+.language-box,
+.header__my-booking-dropdown,
+.header__currency-popup {
+    display: none;
+}
+::-webkit-input-placeholder {
+    color: #000000;
+    font-size: 16px;
+}
+::-moz-placeholder {
+    color: #000000;
+    font-size: 16px;
+}
+:-moz-placeholder {
+    color: #000000;
+    font-size: 16px;
+}
+:-ms-input-placeholder {
+    color: #000000;
+    font-size: 16px;
+}
+.svg__element svg {
+    display: none;
+}
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.flex-box {
+    -webkit-padding-start: 0;
+}
+.flex-contain {
+    padding: 0;
+ margin: 0;
+ list-style: none;
+
+ display: -webkit-box;
+ display: -moz-box;
+ display: -ms-flexbox;
+ display: -webkit-flex;
+ display: flex;
+
+ -webkit-flex-flow: row wrap;
+ justify-content: space-around;
+}
+@media all and (max-width: 800px) {
+    .navigation {
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+}
+@media all and (max-width: 500px) {
+    .navigation {
+        flex-direction: column;
+    }
+}
+@media all and (min-width: 800px) {
+    .flex-item2 {
+        order: 1;
+    }
+    .flex-item1 {
+        order: 2;
+    }
+    .flex-item3 {
+        order: 3;
+    }
+    .flex-item4 {
+        order: 4;
+    }
+    .flex-item5 {
+        order: 5;
+    }
+}
+@media all and (min-width: 320px) and (max-width: 480px) {
+
+    .width {
+        padding-top: 15px;
+    }
+    .flex-item1 {
+        min-width: 275px
+    }
+}
+.flex-container {
+    padding: 0;
+    margin: 0;
+    max-width: 1024px;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    overflow: hidden;
+}
+.flex-item5 {
+    background: tomato;
+    min-width: 200px;
+    height: 46px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+    border: 1px solid white;
+}
+.flex-item1 {
+    /*background: tomato;*/
+    /*min-width: 275px;*/
+    height: 46px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+    padding-bottom: 2px;
+    border: none;
+}
+.city-field {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding-left: 9px;
+    border: none;
+}
+.flex-item2 {
+    width: 108px;
+    height: 46px;
+    background: #d4002a;
+    border: 1px solid white;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+.flex-item3, .flex-item4 {
+    background-color: #dddddd;
+    border: 1px solid white;
+    height: 46px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+    position: relative;
+    padding-top: 10px;
+}
+.show-price {
+    background: #0073b5;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.flex-item3::after {
+    position: absolute;
+    left: 99%;
+    top: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    border-bottom: 13px solid #dddddd;
+    border-left: 22px solid transparent;
+    transform: rotate(90deg);
+    border-right: 22px solid transparent;
+    z-index: 100;
+}
+.flex-item3:before {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    border-bottom: 13px solid white;
+    border-left: 22px solid transparent;
+    transform: rotate(90deg);
+    border-right: 22px solid transparent;
+    z-index: 100;
+}
+.flex-item4::after {
+    position: absolute;
+    top: 0;
+    left: 98.9%;
+    bottom: 0;
+    content: '';
+    display: block;
+    border-bottom: 12px solid #dddddd;
+    border-left: 24px solid transparent;
+    transform: rotate(90deg);
+    border-right: 24px solid transparent;
+    z-index: 100;
+}
+.flex-item4:before {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    content: '';
+    display: block;
+    border-bottom: 12px solid white;
+    border-left: 24px solid transparent;
+    transform: rotate(90deg);
+    border-right: 24px solid transparent;
+    z-index: 100;
+}
+.svg-wrap {
+    max-height: 194px;
+    margin-top: 23px;
+}
+.car-rentals-flex {
+    width: 320px;
+    color: white;
+    -webkit-padding-start: 0;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+.Excel {
+    text-align: center;
+    font-weight: bold;
+}
+.Avis-customer {
+    padding: 0 30px 0 30px;
+}
+.gray {
+    background: #eee;
+}
+.flex-item-estimation_flex {
+    padding-bottom: 15px;
+    max-width: 320px;
+    min-height: 256px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+}
+.flex-item-estimation_flex-question {
+    color: #444;
+    font-weight: bold;
+}
+.fast-references {
+    list-style-type: none;
+    float: left;
+    text-align: left;
+    color: #ccc;
+}
+.references-list {
+    font-size: 12px;
+    padding-top: 17px;
+    color: #fff;
+}
+.mobilka {
+    display: none;
+}
+.communication {
+    display: none;
+}
+.communication-popup {
+    display: none;
+}
+.language-box {
+    display: none;
+}
+.list {
+    display: none;
+}
+.header__phone-box,
+.header-container_angle {
+    display: inline-block;
+}
+.header__phone-box {
+    vertical-align: middle;
+}
+
+@media all and (min-width: 480px) and (max-width: 640px) {
+    .flex-item1 {
+        min-width: 353px
+    }
+}
+
+@media all and (min-width: 640px) and (max-width: 1024px) {
+    .flex-item-estimation_flex {
+        max-width: 320px;
+    }
+    .overflow {
+        overflow: visible;
+    }
+    .modificator {
+        padding-bottom: 20px;
+    }
+    .left {
+        text-align: left;
+    }
+    .estimation-stars {
+        font-size: 14px;
+        color: #ffcd4a;
+        padding-top: 15px;
+    }
+    .Avis {
+        flex-grow: 1;
+        width: 1024px;
+    }
+    .prices-box {
+        height: 112px;
+    }
+    .width {
+        width: 100%;
+    }
+    .header__love {
+        float: left;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    .language, .currency {
+        margin-top:  10px;
+    }
+    .icon {
+        display: flex;
+        margin-top: 6px;
+    }
+    .rent-car-worldwide
+    .flex-container {
+        padding-top: 20px;
+    }
+    .my-booking {
+        padding: 10px;
+        border-radius: 4%;
+        border: 1px solid #5f8aa6;
+        background: none;
+        cursor: pointer;
+        color: #fff;
+    }
+    .header__button,
+    .language,
+    .currency {
+        border: none;
+        display: inline-block;
+        background: none;
+        color: #bacdd9;
+    }
+    .users {
+        display: none;
+    }
+    .header-container_phone {
+        display: none;
+    }
+    .bars {
+        display: none;
+    }
+    .header-container_sub-phone {
+        display: none;
+    }
+    .header__mobile-dropdown {
+        display: none;
+    }
+    .header-container_angle {
+        display: none;
+    }
+    .list {
+        display: flex;
+    }
+    .select {
+        display: none;
+    }
+    .block_b input {
+        text-align: left;
+        padding-left: 10px;
+    }
+    .avis-in-other-cities {
+        max-height: 284px;
+        overflow: hidden;
+        border-bottom: 1px solid #ccc;
+    }
+    .flex-item3,
+    .flex-item4 {
+        min-width: 79px;
+    }
+    .block_b {
+        background: #444444;
+        width: 600px;
+        margin: auto;
+    }
+    .best-deals {
+        padding-top: 40px;
+        padding-bottom: 16px;
+        font-weight: bold;
+        font-size: 19px;
+        color: #cccccc;
+        text-align: left;
+        padding-left: 0;
+        background: none;
+    }
+    .exclusive-offers {
+        color: #aaaaaa;
+        padding-bottom: 18px;
+        text-align: left;
+        padding-left: 0;
+    }
+    .block_b .email-field {
+        width: 415px;
+        height: 42px;
+        background-color: white;
+        border: 1px solid #dddddd;
+    }
+    .block_b .subscribe-button {
+        width: 120px;
+        margin-left: 14px;
+        height: 42px;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 18px;
+        margin-top: 18px;
+        font-size: 14px;
+    }
+    .block_b p {
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        -webkit-margin-start: 20px;
+        -webkit-margin-end: 0
+    }
+    .best_deals .flex-container {
+        /*background:#444444;*/
+    }
+    .best_deals .sub-container {
+        background: #555555;
+    }
+    .block_b {
+        margin-top: 26px;
+    }
+}
+    .estimation-discription {
+        max-width: 320px;
+        margin: auto;
+        }
+    .flex-item2 {
+        order: 2;
+        }
+    .flex-item1 {
+        order: 1;
+        flex-grow: 1;
+        min-width: 600px;
+        }
+    .flex-item3 {
+        order: 3;
+        }
+    .flex-item4 {
+        order: 4;
+        }
+    .flex-item5 {
+        order: 5;
+        flex-grow: 1;
+        }
+@media all and (min-width: 1024px) {
+    ::-webkit-input-placeholder {
+        color:#aaa;
+        font-size:12px;
+    }
+    ::-moz-placeholder {
+        color:#aaa;
+        font-size:12px;
+    }
+    :-moz-placeholder  {
+        color:#aaa;
+        font-size:12px;
+    }
+    :-ms-input-placeholder {
+        color:#aaa;
+        font-size:12px;
+    }
+    ul.flex-box {
+        height: 266px;
+    }
+    .visible {
+        display: block;
+    }
+    .why-book {
+        display: none;
+    }
+    .why-book__fullscreen {
+        display: block;
+        margin-left: 30px;
+    }
+    .header__my-booking-dropdown {
+        display: none;
+        width: 240px;
+        padding:20px 0 20px 0;
+        text-align: center;
+        position: absolute;
+        z-index: 100;
+        top:70px;
+        right: 40px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    .header__my-booking-dropdown::after {
+        content: '';
+        display: block;
+        position: relative;
+        top: -155px;
+        left: 70%;
+        width: 0;
+        height: 0;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+        border-bottom: 11px solid #fff;
+    }
+    .header__my-booking-button {
+        width: 200px;
+        height: 35px;
+        background-color: #0073b5;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+    }
+    .header__my-booking-input {
+      width: 200px;
+      height: 35px;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      font-size: 12px;
+      border: 1px solid #ddd;
+    }
+    .header__currency-popup {
+      width: 200px;
+      border-radius: 4px;
+      background: #fff;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 18px;
+      display: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      position: absolute;
+      top: 55px;
+      right: 110px;
+      z-index: 100;
+    }
+    .header__currency-popup::after {
+        content: '';
+        display: block;
+        position: relative;
+        top: -200px;
+        left: 45%;
+        width: 0;
+        height: 0;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+        border-bottom: 11px solid #fff;
+}
+    .header__currency-line {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      padding-left: 10px;
+    }
+    .header__currency-abbreviation {
+      float: right;
+      color: #1a5880;
+      margin-right: 10px;
+    }
+    .header__currency-line:hover {
+      color: #fff;
+      background: #1a587f;
+    }
+    .communication-popup {
+        display: block;
+    }
+    .header__button .fa-angle-down {
+        display: none;
+    }
+    .all-review-box {
+        text-align: left;
+    }
+    .language-box {
+    color: black;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    top: 55px;
+    font-size: 12px;
+    right: 190px;
+    }
+    .language-box::after {
+        content: '';
+        display: block;
+        position: relative;
+        top: -10px;
+        left: 45%;
+        width: 0;
+        height: 0;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+        border-bottom: 11px solid #fff;
+    }
+    .language-box__language {
+        padding:0 30px 0 10px;
+    }
+    .languages_left, .languages_right {
+     float: left;
+     list-style-type: none;
+    -webkit-padding-start: 0;
+    }
+    .languages_left {
+      border-right:1px solid #ddd;
+    }
+    .language-box__language:hover {
+        background: #1a587f;
+        color: #fff;
+    }
+    .language-box__language.selected {
+        color: #1a5880;
+    }
+    .communication-popup {
+    height: 64px;
+    border: none;
+    background: none;
+    float: right;
+    cursor: pointer;
+    }
+    .communication-popup:hover {
+        background: #133f5c;
+        cursor: pointer;
+    }
+    .communication {
+    position: absolute;
+    background: white;
+    z-index: 100;
+    color: black;
+    top: 70px;
+    right: 160px;
+    }
+    .communication::after {
+        content: '';
+        display: block;
+        position: relative;
+        top: -10px;
+        left: 51.5%;
+        width: 0;
+        height: 0;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+        border-bottom: 11px solid #fff;
+    }
+    .communication__list-country,
+    .communication__list-number {
+        font-size: 12px;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+    .communication__list-left,
+    .communication__list-right {
+    display: inline-block;
+    list-style-type: none;
+    }
+    .communication__list {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    border-right:1px solid gray;
+    margin: 5px 0;
+    float: left;
+    }
+    .communication__list-right {
+    text-align: right;
+    }
+    .communication__list-country {
+    margin-left: -15px;
+    }
+    .communication__list-left {
+    text-align: left;
+    margin-left: -10px;
+    }
+    .container__all-cities {
+        padding-left: 15px;
+        text-align: left;
+    }
+    .users {
+        display: inline-block;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+    .sub-container_header {
+        width: 960px;
+        margin: auto;
+    }
+    .header__phone {
+        padding-left: 10px;
+        /*margin-left: 130px;*/
+    }
+    .person {
+        display: flex;
+    }
+    .estimation-word, .date {
+        float: none;
+    }
+    .name {
+        order:1;
+    }
+    .country {
+        order: 2;
+        font-size: 13px;
+        padding-top: 2px;
+    }
+    .dash {
+        display: block;
+        font-size: 16px;
+        order: 3;
+        padding:0 5px;
+        border-bottom:1px solid #898989;
+        height: 13px;
+        margin-left: 5px;
+    }
+    .date {
+        order: 4;
+        font-size: 13px;
+        padding: 2px 0 0 5px;
+    }
+    .estimation-word {
+        order: 5;
+        flex-grow: 1;
+        text-align: right;
+    }
+    .lelde {
+        padding: 0 5px 0 10px;
+    }
+    .slider-container-discription {
+        width: 800px;
+        font-size: 20px;
+        margin: auto;
+        margin-bottom: 28px;
+    }
+    .svg__element svg {
+        width: 57px;
+        display: inline-block;
+    }
+    .flex-item_invisible {
+        display: none;
+    }
+    .mobilka {
+        display: block;
+    }
+    .smartphone {
+        display: block;
+        padding-top: 20px;
+    }
+    .car-rentals-flex {
+        width: 220px;
+    }
+    .center {
+        min-height: 260px;
+    }
+    .list {
+        padding-top: 30px;
+        margin-right: 20px;
+    }
+    .best_deals ul.flex-container {
+        max-width: 50px;
+        padding-top: 30px;
+    }
+    .best-deals {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    .exclusive-offers {
+        font-size: 12px;
+    }
+    .block_b .email-field {
+        height: 32px;
+    }
+    .block_b .subscribe-button {
+        height: 32px;
+        width: 200px;
+        margin-left: 0;
+        border-radius: 4px;
+        background-color: #f2a622;
+    }
+    .book-rentals {
+        font-size: 65px;
+        padding-top: 25px;
+        text-align: left;
+        margin-left: 40px;
+    }
+    .book-rentals-discription {
+        font-size: 20px;
+        text-align: left;
+        margin-left: 40px;
+    }
+    .drive__element {
+        max-width: 640px;
+        float: left;
+    }
+    .drive__element .flex-item {
+        max-width: 320px;
+    }
+    .best_deals .flex-item {
+        flex-grow: 0;
+    }
+    .rent-car-worldwide .flex-item-estimation_flex {
+        max-width: none;
+        margin: auto;
+        max-height: 267px;
+    }
+    .prices-box {
+        height: 68px;
+    }
+    .max {
+        width: 700px;
+    }
+    .estimation-discription {
+        max-width: 700px;
+    }
+    .flex-item2 {
+        order: 1;
+        }
+    .flex-item1 {
+        order: 2;
+        flex-grow: 1;
+        min-width: 0;
+        }
+    .car-rentals {
+        padding-left: 0;
+    }
+    .block_b {
+        display: inline-block;
+        float: right;
+        width: 240px;
+        margin-right: 20px;
+    }
+    .block_b .email-field {
+        width: 200px;
+    }
+    .list {
+        display: inline-block;
+        float:left;
+    }
+    .image-crn {
+        margin-left: 30px;
+    }
+    .flex-item_fullscreen {
+        margin-top: 20px;
+    }
+    .customer-service {
+        text-align: left;
+    }
+    .header-container {
+        width: 100%;
+    }
+    .icon, .header__love,
+    .header__phone {
+        display: inline-block;
+        float:left;
+    }
+    .bars {
+        display: none;
+    }
+    .header-container_sub-phone,
+    .header-container_phone,
+    .header-container_angle,
+    .fa-phone {
+        /*float: left;*/
+        display: inline-block;
+    }
+    .header__button,
+    .header-container_phone,
+    .header-container_angle {
+        color: #fff;
+    }
+    .header__love {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .language,
+    .currency,
+    .my-booking {
+        background: transparent;
+        border: none;
+        color: white;
+        float: right;
+        margin: 15px 15px;
+    }
+    .icon {
+    margin: 20px 20px 0 0;
+    display: flex;
+    }
+    .language {
+    height: 30px;
+    }
+    .language:hover {
+        background: #133f5c;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .currency:hover {
+        background: #133f5c;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .currency {
+    height: 30px;
+    }
+    .header-container_sub-phone {
+        font-size: 12px;
+    }
+    .header-container_angle {
+        margin-top: 5px;
+        padding-right: 5px;
+    }
+    .fa-angle-down {
+        margin-left: 10px;
+    }
+    .my-booking {
+        border: 1px solid #bacdd9;
+        padding: 10px;
+        border-radius: 4%;
+        float: right;
+        margin-top: 15px;
+    }
+    .header__love,
+    .header-container_sub-phone,
+    .language,
+    .currency,
+    .my-booking {
+        color: #bacdd9;
+    }
+}
+@media all and (min-width: 640px) and (max-width: 1024px) {
+    .logo {
+        margin: 0 10px 0 0;
+        float: right;
+    }
+    .alamo-enterprise_right {
+        float: right;
+        margin-right: 15px;
+    }
+    .alamo-enterprise_left {
+        float: left;
+        margin-left: 15px;
+    }
+    .my-booking,
+    .currency,
+    .language,
+    .communication-popup {
+        float: right;
+    }
+    .Avis-customer {
+        padding: 0;
+        text-align: left;
+    }
+}
+.fast-references {
+    -webkit-margin-before: 0;
+}
+.flex-item_social {
+    margin-top: 20px;
+}
+.social-networks-hotkeys {
+    margin-bottom: 20px;
+}
+.prices-box_advantages {
+    color: white;
+    height: 106px;
+    overflow: hidden;
+}
+.prices-box__list {
+    display: inline-block;
+    text-align: left;
+    list-style-image: url("img/check.png");
+    font-size: 13px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+@media all and (min-width: 640px) and (max-width: 1023px) {
+    .flex-item_fullscreen {
+        display: none;
+    }
+    .block_b {
+        margin-bottom: 35px;
+    }
+    ul.flex-box {
+        margin: 0 5px 0 5px;
+        min-height: 226;
+    }
+    .car-rentals-flex {
+    width: 300px;
+    }
+    .car-rentals {
+    padding-left: 10px;
+    }
+    .language-box {
+    color: black;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    top: 55px;
+    font-size: 12px;
+    right: 150px;
+    }
+    .language-box__language {
+        padding:0 30px 0 10px;
+    }
+    .languages_left,
+    .languages_right {
+     float: left;
+     list-style-type: none;
+    -webkit-padding-start: 0;
+    }
+    .languages_left {
+      border-right:1px solid #ddd;
+    }
+    .language-box__language:hover {
+        background: #1a587f;
+        color: #fff;
+    }
+    .language-box__language.selected {
+        color: #1a5880;
+    }
+    .header__my-booking-dropdown {
+        display: none;
+        width: 240px;
+        padding:20px 0 20px 0;
+        text-align: center;
+        position: absolute;
+        z-index: 100;
+        top:70px;
+        right: 40px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    .header__my-booking-button {
+        width: 200px;
+        height: 35px;
+        background-color: #0073b5;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+    }
+    .header__my-booking-input {
+      width: 200px;
+      height: 35px;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      font-size: 12px;
+      border: 1px solid #ddd;
+    }
+    .header__currency-popup {
+      width: 200px;
+      border-radius: 4px;
+      background: #fff;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 18px;
+      display: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      position: absolute;
+      top: 55px;
+      right: 80px;
+      z-index: 100;
+    }
+    .header__currency-line {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      padding-left: 10px;
+    }
+    .header__currency-abbreviation {
+      float: right;
+      color: #1a5880;
+      margin-right: 10px;
+    }
+    .header__currency-line:hover {
+      color: #fff;
+      background: #1a587f;
+    }
+    .communication-popup {
+    /*height: 64px;*/
+    border: none;
+    background: none;
+    float: right;
+    cursor: pointer;
+    }
+    .communication-popup:hover {
+        background: #133f5c;
+        cursor: pointer;
+    }
+    .communication {
+    position: absolute;
+    background: white;
+    z-index: 100;
+    color: black;
+    top: 70px;
+    right: 80px;
+    }
+    .communication__list-country,
+    .communication__list-number {
+        font-size: 10px;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+    .communication__list-left,
+    .communication__list-right {
+    display: inline-block;
+    list-style-type: none;
+    }
+    .communication__list {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    border-right:1px solid gray;
+    margin: 5px 0;
+    float: left;
+    }
+    .header__my-booking-dropdown::after {
+    content: '';
+    display: block;
+    position: relative;
+    top: -155px;
+    left: 70%;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #fff;
+    }
+    .header__currency-popup::after {
+      content: '';
+      display: block;
+      position: relative;
+      top: -200px;
+      left: 45%;
+      width: 0;
+      height: 0;
+      border-left: 11px solid transparent;
+      border-right: 11px solid transparent;
+      border-bottom: 11px solid #fff;
+    }
+
+    .language-box::after {
+      content: '';
+      display: block;
+      position: relative;
+      top: -10px;
+      left: 45%;
+      width: 0;
+      height: 0;
+      border-left: 11px solid transparent;
+      border-right: 11px solid transparent;
+      border-bottom: 11px solid #fff;
+    }
+
+    .communication::after {
+      content: '';
+      display: block;
+      position: relative;
+      top: -10px;
+      left: 51.5%;
+      width: 0;
+      height: 0;
+      border-left: 11px solid transparent;
+      border-right: 11px solid transparent;
+      border-bottom: 11px solid #fff;
+    }
+    .communication__list-right {
+    text-align: right;
+    }
+    .communication__list-country {
+    margin-left: -15px;
+    }
+    .communication__list-left {
+    text-align: left;
+    margin-left: -10px;
+    }
+    .container__all-cities {
+        padding-left: 15px;
+        text-align: left;
+    }
+    .fa-phone {
+        padding-right: 5px;
+    }
+    .visible {
+        display: none;
+    }
+    .flex-item_social {
+        flex-grow: 0;
+        padding-bottom: 35px;
+        margin-top: 10px;
+    }
+    .social-networks-hotkeys {
+        display: inline-block;
+        flex-grow: 0;
+        margin: 0 10px 0 10px;
+    }
+    .flex-item_mobile-logos {
+        margin-left: 135px;
+    }
+    .flex-item_invisible {
+        display: inline-block;
+    }
+    .communication-popup {
+        margin-right: 15px;
+    }
+    .my-booking,
+    .currency,
+    .language,
+    .bars {
+        margin-right: 30px;
+    }
+    .header__love {
+        font-size: 15px !important;
+        color: #bacdd9;
+        margin-top: 8px !important;
+    }
+    .communication-popup {
+        display: block;
+        margin-top: 10px;
+        background-color: transparent;
+        border: none;
+    }
+    .width {
+        padding-top: 10px;
+    }
+    .google-app {
+        width: 150px;
+    }
+    .book-rentals-discription {
+        font-size: 15px;
+        text-align: left;
+        padding-left: 10px;
+    }
+    .book-rentals {
+        font-size: 32px;
+        padding-top: 40px;
+        text-align: left;
+        padding-left: 10px;
+    }
+    .best_deals {
+        flex-grow: 0;
+    }
+    .modificator {
+        flex-grow: 0;
+        margin-left: 20px;
+    }
+    .lelde {
+        padding-right: 5px;
+    }
+    .smartphone {
+        width: 320px;
+        float: right;
+        display: block;
+        background-image: url(img/phone.png);
+        height: 524px;
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+    .flex-contain {
+        width: 175px;
+    }
+    .drive__element {
+        width: 320px;
+        float: left;
+        margin-left: 10px;
+    }
+    .max {
+        margin: auto;
+    }
+    .rent-car-worldwide {
+        width: 640px;
+        margin: auto;
+    }
+}
+@media all and (min-width: 320px) and (max-width: 639px) {
+    .rent-car-worldwide {
+        width: 320px;
+        margin: auto;
+    }
+    .margin {
+        margin-bottom: 20px;
+    }
+    .social-networks-hotkeys {
+        display: inline-block;
+    }
+    .flex-item_invisible {
+        display: inline-block;
+    }
+    .slider-container {
+        height: 485px;
+    }
+    .flex-item_fullscreen {
+        display: none;
+    }
+    .header__love,
+    .header__phone,
+    .header-container_angle,
+    .language, .currency,
+    .my-booking,
+    .prices-box__list {
+        display: none;
+    }
+    .header__phone {
+        display: block;
+    }
+    .header__mobile-dropdown {
+        display: none;
+    }
+    .header__mobile-dropdown .header__my-booking-button_mobile {
+        width: 95%;
+    height: 42px;
+    background-color: #0073b5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    float: none;
+    margin: 17px 0 0 0;
+    }
+    .header__my-booking-dropdown_mobile {
+        display: none;
+    position: absolute;
+    z-index: 1000;
+    background: #fff;
+    top: 39px;
+    height: 176px;
+    text-align: center;
+    }
+    .header__my-booking-input_mobile {
+    width: 100%;
+    height: 50px;
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    color: #aaa;
+    }
+    .header__mobile-dropdown_currency {
+    width: 45px;
+    z-index: 2;
+    position: absolute;
+    left: 139px;
+    top: 9px;
+    padding-left: 5px;
+    background: transparent;
+    color: transparent;
+    border: none;
+    }
+    .communication__mobile {
+    display: none;
+    color: black;
+    background: white;
+    position: absolute;
+    left:0;
+    right:0;
+    }
+    .communication__mobile-list {
+    font-size: 10px;
+    text-align: center;
+    }
+    .communication__mobile-list_left {
+    font-size: 10px;
+    float: left;
+    text-align: left;
+    list-style-type: none;
+    padding-left: 18px;
+    }
+    .communication__mobile-list_right {
+    float: right;
+    font-size: 10px;
+    list-style-type: none;
+    padding-right: 18px;
+    text-align: right;
+    }
+    .header__phone-box_mobile {
+        padding: 10px 5px;
+        margin: 0 5px;
+        border-bottom: 1px solid #ddd;
+    }
+    .header__phone-box_mobile .header__button_mobile, .header-container_phone {
+        display: inline-block;
+    }
+    .communication__mobile-list_country, .communication__mobile-list_number {
+        padding: 5px 0;
+    }
+    .lelde {
+        padding-right: 5px;
+    }
+    .header__button_mobile {
+        font-size: 14px;
+    }
+    .header-container_phone {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    ::-webkit-input-placeholder {
+        color: #aaa;
+        font-size: 16px;
+    }
+    ::-moz-placeholder {
+        color: #aaa;
+        font-size: 16px;
+    }
+    :-moz-placeholder {
+        color: #aaa;
+        font-size: 16px;
+    }
+    :-ms-input-placeholder {
+        color: #aaa;
+        font-size: 16px;
+    }
+}
+    .estimation-discription {
+        margin-bottom: 110px;
+    }
+    .margin {
+        margin-bottom: 30px;
+    }
+    .block_b {
+        background-color: #444;
+    }
+    .email-field, .subscribe-button {
+        text-align: center;
+    }
+    .flex-item, .block_b {
+        text-align: center;
+    }
+    .icon {
+        display: flex;
+    }
